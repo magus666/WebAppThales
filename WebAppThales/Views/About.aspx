@@ -3,7 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <main aria-labelledby="title">
         <h2 id="title"><%: Title %>.</h2>
-        <p>Your app description page.</p>
-        <p>Use this area to provide additional information.</p>
+        <p>Application to Manage the Employees.</p>
+        <p>Using .Net Framework.</p>
     </main>
 </asp:Content>

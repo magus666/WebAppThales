@@ -3,18 +3,17 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <main aria-labelledby="title">
         <h2 id="title"><%: Title %></h2>
-        <p>Your contact page.</p>
+        <p>Pagina de Contacto.</p>
 
         <address>
-            One Microsoft Way<br />
-            Redmond, WA 98052-6399<br />
+            Ivan Mauricio marin<br />
+            Bogota Colombia<br />
             <abbr title="Phone">P:</abbr>
-            425.555.0100
+            3175379103
         </address>
 
         <address>
-            <strong>Support:</strong><a href="mailto:Support@example.com">Support@example.com</a><br />
-            <strong>Marketing:</strong><a href="mailto:Marketing@example.com">Marketing@example.com</a>
+            <strong>Soporte:</strong><a href="mailto:Support@example.com"> ivan_marin_lombo@hotmail.com</a><br />
         </address>
     </main>
 </asp:Content>
