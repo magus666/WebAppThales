@@ -23,27 +23,20 @@
             <div class="col-sm-12">
                 <div class="card m-2 pb-2 shadow bg-white rounded" style="overflow-y: auto">
                     <div class="card-body">
-                        <div class="row" runat="server">
-                            <div class="col-sm-9">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <asp:Label ID="LblBuscar" runat="server" CssClass="form-label" Text="Select a Employee"></asp:Label>
-                                        <asp:DropDownList ID="DdlEmployee" CssClass="form-control" runat="server" AutoPostBack="true" OnSelectedIndexChanged="DdlEmployee_SelectedIndexChanged"></asp:DropDownList>
-                                    </div>
-                                </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <asp:Label ID="LblBuscar" runat="server" CssClass="form-label" Text="Select a Employee"></asp:Label>
+                                <asp:DropDownList ID="DdlEmployee" CssClass="form-control" runat="server" AutoPostBack="true" OnSelectedIndexChanged="DdlEmployee_SelectedIndexChanged"></asp:DropDownList>
                             </div>
-                            <div class="col-sm-3">
+                            <div class="col-sm-6">
                                 <asp:Label ID="LblBuscarBoton" runat="server" CssClass="form-label" Text="Search a Employee"></asp:Label>
-                                <div class="row">
-                                    <div class="input-group mb-3">
-                                        <asp:TextBox ID="TxtSearch" runat="server" AutoPostBack="true" CssClass="form-control" OnTextChanged="TxtSearch_TextChanged"></asp:TextBox>
-                                        <div class="input-group-append">
-                                            <asp:Button ID="BtnBuscar" runat="server" Text="Buscar" CssClass="btn btn-primary" OnClick="BtnBuscar_Click" />
-                                        </div>
+                                <div class="input-group mb-3">
+                                    <asp:TextBox ID="TxtSearch" runat="server" AutoPostBack="true" CssClass="form-control" OnTextChanged="TxtSearch_TextChanged"></asp:TextBox>
+                                    <div class="input-group-append">
+                                        <asp:Button ID="BtnBuscar" runat="server" Text="Buscar" CssClass="btn btn-primary" OnClick="BtnBuscar_Click" />
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
