@@ -52,7 +52,11 @@
                                         <asp:BoundField DataField="AgeEmployee" HeaderText="Age" />
                                         <asp:BoundField DataField="SalaryEmployee" HeaderText="Salary" />
                                         <asp:BoundField DataField="AnualSalary" HeaderText="Anual Salary" />
-                                        <asp:BoundField DataField="ImageEmployee" HeaderText="Image" />
+                                        <asp:TemplateField HeaderText="User Image">
+                                            <ItemTemplate>
+                                                <asp:Image ID="ImgUser" runat="server" Width="100" Height="100" ImageUrl='<%# Eval("ImageEmployee") %>' />
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
                                     </Columns>
                                 </asp:GridView>
                             </div>

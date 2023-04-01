@@ -5,9 +5,9 @@
     Protected Async Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         If Not IsPostBack Then
             Try
-                Await GetEmployeeClass.GetEmployeeDummy()
                 Await FillDataGridAllEmployees()
                 Await GetDropDownEmployee()
+                Await GetEmployeeClass.GetEmployeeDummy()
             Catch ex As Exception
                 MensajeError("Unable to bring Dummy API information: " & ex.Message)
             End Try
@@ -98,4 +98,15 @@
         LblMensajeAviso.Text = Mensaje
         Return Mensaje
     End Function
+
+    'Protected Sub GrwEmployee_RowDataBound(sender As Object, e As GridViewRowEventArgs)
+    '    Try
+    '        If (e.Row.RowType = DataControlRowType.DataRow) Then
+    '            Dim EmployeeImage As Image = (CType(e.Row.FindControl("ImgUser"), Image))
+    '            EmployeeImage.ImageUrl = "https://pluspng.com/img-png/png-user-icon-icons-logos-emojis-users-2400.png"
+    '        End If
+    '    Catch ex As Exception
+    '        MensajeError(ex.Message)
+    '    End Try
+    'End Sub
 End Class
