@@ -9,7 +9,7 @@
                 Await FillDataGridAllEmployees()
                 Await GetDropDownEmployee()
             Catch ex As Exception
-                MensajeError(ex.Message)
+                MensajeError("Unable to bring Dummy API information: " & ex.Message)
             End Try
         End If
     End Sub
