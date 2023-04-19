@@ -1,0 +1,29 @@
+{
+  "background_color": "#ffffff",
+  "description": "Thales app for windows",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "thaleswebapp.azurewebsites",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "thaleswebapp.azurewebsites",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "categories": [
+    "business",
+    "finance"
+  ],
+  "screenshots": [],
+  "icons": [
+    {
+      "src": "Image/SmallTile.scale-100.png",
+      "type": "image/png"
+    },
+    {
+      "src": "Image/SmallTile.scale-125.png",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [],
+  "lang": "es"
+}
