@@ -16,11 +16,11 @@
   "screenshots": [],
   "icons": [
     {
-      "src": "Image/SmallTile.scale-100.png",
+      "src": "/Image/SmallTile.scale-100.png",
       "type": "image/png"
     },
     {
-      "src": "Image/SmallTile.scale-125.png",
+      "src": "/Image/SmallTile.scale-125.png",
       "type": "image/png"
     }
   ],
