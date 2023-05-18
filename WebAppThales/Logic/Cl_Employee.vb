@@ -5,7 +5,7 @@ Imports System.Threading.Tasks
 Public Class Cl_Employee
     Public Async Function GetEmployee() As Task(Of List(Of EmployeeModel))
         Try
-            Dim UrlApi As String = "https://thalesapi.azurewebsites.net/api/Employee/GetlEmployees"
+            Dim UrlApi As String = "https://thalesapi.azurewebsites.net/api/Employee/GetEmployee"
             Dim WebCliente As New WebClient()
             Dim JsonDevuleto As String = Await WebCliente.DownloadStringTaskAsync(New Uri(UrlApi))
             Dim ListaParametrizacion As List(Of EmployeeModel) = JsonConvert.DeserializeObject(Of List(Of EmployeeModel))(JsonDevuleto)
